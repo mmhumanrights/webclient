@@ -18,9 +18,9 @@ bloodapp.config(function($routeProvider) {
                 controller: 'donatorcontroller'
             })
 
-            .when('/articles?portfolioId',{
+            .when('/articles',{
                 templateUrl:'views/article.html',
-                controller: 'homecontroller'
+                controller: 'articleController'
             })
 
             // route for the contact page
@@ -29,7 +29,7 @@ bloodapp.config(function($routeProvider) {
                 controller  : 'contactController'
             });
     });
-
+//To get Query String Parameter 
 bloodapp.config(['$locationProvider',function($locationProvider){
     $locationProvider.html5Mode( false );
 }]);

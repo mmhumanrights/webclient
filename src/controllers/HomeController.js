@@ -1,10 +1,11 @@
-bloodapp.controller('homecontroller',['$scope','$location',function($scope,$location){
+bloodapp.controller('homecontroller',['$scope','$location','Page',function($scope,$location,Page){
 
 	$scope.message="This is home";
 	$scope.metatitle="Myanmar Blood Info";
-	var searchObject = $location.search();
+	$scope.Page=Page;
+	//$scope.Page.setTitle("asdf");
 
-	console.log(searchObject);
+	
 
 	
   
