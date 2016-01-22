@@ -23,6 +23,16 @@ humanright_app.config(function($routeProvider) {
                 controller: 'articleController'
             })
 
+            .when('/detail',{
+                templateUrl:'views/article_detail.html',
+                controller: 'articleDetailController'
+            })
+
+            .when('/err',{
+                templateUrl:'views/error.html'
+                
+            })
+
             // route for the contact page
             .when('/contact', {
                 templateUrl : 'views/contact.html',
