@@ -1,4 +1,4 @@
-bloodapp.config(function($routeProvider) {
+humanright_app.config(function($routeProvider) {
         $routeProvider
 
             // route for the home page
@@ -30,6 +30,6 @@ bloodapp.config(function($routeProvider) {
             });
     });
 //To get Query String Parameter 
-bloodapp.config(['$locationProvider',function($locationProvider){
+humanright_app.config(['$locationProvider',function($locationProvider){
     $locationProvider.html5Mode( false );
 }]);

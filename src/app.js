@@ -1,6 +1,6 @@
-var bloodapp = angular.module('bloodapp', ['ngRoute','articleServices']);
+var humanright_app = angular.module('humanright_app', ['ngRoute','articleServices']);
 
-bloodapp.factory('Page', function(){
+humanright_app.factory('Page', function(){
   var title = 'default';
   return {
     title: function() { return title; },
