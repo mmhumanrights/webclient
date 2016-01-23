@@ -10,7 +10,7 @@ humanright_app.config(function($routeProvider) {
             // route for the about page
             .when('/about', {
                 templateUrl : 'views/about.html',
-                controller  : 'aboutController'
+                controller  : 'aboutcontroller'
             })
 
             .when('/donators',{
