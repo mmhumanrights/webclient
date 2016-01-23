@@ -3,8 +3,8 @@ humanright_app.config(function($routeProvider) {
 
             // route for the home page
             .when('/', {
-                templateUrl : 'views/home.html',
-                controller  : 'homecontroller'
+                templateUrl:'views/article.html',
+                controller: 'articleController'
             })
 
             // route for the about page
@@ -26,6 +26,10 @@ humanright_app.config(function($routeProvider) {
             .when('/detail',{
                 templateUrl:'views/article_detail.html',
                 controller: 'articleDetailController'
+            })
+
+            .when('/submit',{
+                  templateUrl:'views/submission.html'  
             })
 
             .when('/err',{

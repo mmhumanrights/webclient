@@ -2,10 +2,21 @@
 <html lang="en" ng-app="humanright_app" ng-controller="homecontroller">
 <head >
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title >{{ Page.title() }}</title>
   <!--  Scripts-->
   
+  <!-- SEO OPTIMIZATION -->
+  <meta name="description" content="{{Page.metadescription()}}" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+
+<meta property="og:site_name" content="Myanmar Human Rights" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://mmhumanrights.github.io" />
+<meta property="og:title" content="{{Page.metatitle()}}" />
+<meta property="og:description" content="{{Page.metadescription()}}" />
+<!-- SEO OPTIMIZATION -->
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -17,21 +28,23 @@
 <body  style="margin:0;padding:0;height:100%;" >
 	
   <nav class="blue darken-3" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#/" class="brand-logo">lol</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#/">Home</a></li>
+
+    <div class="nav-wrapper container"><a id="logo-container" href="#/" class="right brand-logo">MM HumanRights</a>
+      <ul class="left hide-on-med-and-down">
+        <!-- <li><a href="#/">Home</a></li> -->
         <li><a href="#articles">Human Rights Articles</a></li>
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#">Navbar Link</a></li>
+       
+        <li><a href="#submit">Submit Your Problem</a></li>
+         <li><a href="#about">About</a></li>
+        
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#">Navbar Link</a></li>
+        <!-- <li><a href="#/">Home</a></li> -->
+        <li><a href="#articles">Human Rights Articles</a></li>
+        <li><a href="#submit">Submit Your Problem</a></li>
+         <li><a href="#about">About</a></li>
+        
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>

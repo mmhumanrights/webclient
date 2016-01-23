@@ -5,6 +5,8 @@ humanright_app.controller('articleController',['$scope','$location','Article','P
 	
 	
 	Page.setTitle("Articles");
+	Page.setMetaDescription("Myanmar Human Rights app is to find out  Human Rights violations within country and share the knowledge of humanrights to the people of myanmar via mobile app");
+	Page.setMetaTitle("Myanmar Human Rights | human rights | myanmar humanrights app");
 
 
 	article=$location.search();
